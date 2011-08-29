@@ -1,0 +1,12 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(orkbase, 1.0)
+
+AC_PREFIX_DEFAULT(/usr)
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX
+AM_PROG_LIBTOOL
+
+AC_OUTPUT(Makefile messages/Makefile serializers/Makefile audiofile/Makefile filters/Makefile filters/gsm/Makefile filters/gsm/gsm610/Makefile filters/ilbc/Makefile filters/ilbc/ilbc/Makefile filters/audiogain/Makefile filters/g722codec/Makefile)
